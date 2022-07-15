@@ -1,9 +1,57 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>directory</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+  <ion-header>
+    <ion-title class="header">
+      <ion-img src="../assets/icon/Logo.png"></ion-img>
+    </ion-title>
+  </ion-header>
 
+  <ion-card-content class="title">
+    Today, I am looking for gifts for...
+  </ion-card-content>
+
+  <ion-searchbar>
+    <!-- TODO: Add search function -->
+  </ion-searchbar>
+
+  <hr>
+  <ion-card-content class="filter">
+    Recently viewed
+    <!-- TODO: Add filter functionality -->
+  </ion-card-content>
+
+  <br>
+  <br>
+  <br>
+
+  <ion-slides [options]="{ slidesPerView: 1.5, loop: true}" scrollbar="true">
+    <ion-slide>
+      <ion-card (click)="toGiftSelector()">
+        <!-- TODO: Add database retrieval - load profile information on click -->
+        <ion-card-content>
+          <ng-container>
+            <img class="image" src="https://images.unsplash.com/photo-1611351669792-85f72a56d4e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80">
+              <!-- TODO: Add database retrieval -->
+          </ng-container>
+          <p>
+            Insert profile name
+            <!-- TODO: Add database retrieval -->
+          </p>
+          <p>
+            Insert relationship
+            <!-- TODO: Add database retrieval -->
+          </p>
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+  <br>
+  <ion-button>
+    Add New Profile
+    <!-- TODO: Add routing -->
+  </ion-button>
+  <br>
+  <ion-button>
+    Show All
+    <!-- TODO: Add routing -->
+  </ion-button>
 </ion-content>

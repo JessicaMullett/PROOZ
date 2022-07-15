@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'directory',
     loadChildren: () => import('./directory/directory.module').then( m => m.DirectoryPageModule)
   },
+  {
+    path: 'gift-selector',
+    loadChildren: () => import('./gift-selector/gift-selector.module').then( m => m.GiftSelectorPageModule)
+  },
 ];
 
 @NgModule({
