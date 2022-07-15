@@ -1,0 +1,7 @@
+{
+  "name": "prooz",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
