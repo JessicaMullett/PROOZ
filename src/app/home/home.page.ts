@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,13 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(
+    public router: Router
+  ) {}
 
+  signIn(){
+    // TODO: Add database link to store user email and password
+    this.router.navigate(['/directory']),
+    console.log('directing')
+  }
 }

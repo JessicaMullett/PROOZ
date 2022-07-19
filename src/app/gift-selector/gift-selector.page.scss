@@ -1,0 +1,39 @@
+.divider {
+    display: flex;
+  
+    &:before,
+    &:after {
+      content: "";
+      flex: 1;
+    }
+  }
+  
+  .line {
+    align-items: center;
+    margin: 1em -1em;
+    color: #FFE8D4;
+  
+    &:before,
+    &:after {
+      height: 1px;
+      margin: 0 1em;
+    }
+  }
+  
+  .one-line {
+    &:before,
+    &:after {
+       background: #FFE8D4
+    }
+  }
+  
+  .already {
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  ion-content{
+    --background: white;
+   }
+   
