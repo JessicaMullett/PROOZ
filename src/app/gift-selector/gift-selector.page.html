@@ -1,17 +1,34 @@
 <ion-content>
-  <ion-header>
-    <!-- TODO: Add fetch command for profile information -->
-    <ion-col>
-      <ion-img></ion-img>
+  <!-- TODO: Add fetch command for profile information -->
+  <ion-row class="ion-align-items-center">
+    <ion-col size="3">
+      <ion-icon style="color:#FFE8D4" class="image" name="add-circle-outline"></ion-icon>
+      <!-- TODO: Replace icon with img -->
     </ion-col>
-    <ion-col>
-    <ion-row>
-      <p>Name</p>
-    </ion-row>
-    <ion-row>
-      <p>Birthday: dd/mm/yyyy</p>
-    </ion-row>
-  </ion-col>
-  </ion-header>
-  <span class="divider line one-line"></span>
+    <ion-col size="6">
+      <ion-row>
+        <h5 style="color:#F68080" class="name">Name</h5>
+        <ion-icon class="drop" style="color:#F68080" name="caret-down-outline"></ion-icon>
+      </ion-row>
+      <h6 style="color:#B4B4B4" class="date">Birthday: xx month</h6>
+    </ion-col>
+  </ion-row>
+  <hr />
+  <ion-icon class="icon" name="trash-bin-outline"></ion-icon>
+  <ion-slide>
+    <ion-slides>
+      <ion-card class="card">
+        <ion-card-content>
+          <ion-card class="picture">Image here</ion-card>
+          <h4>Name of product</h4>
+          <h5>Price</h5>
+        </ion-card-content>
+      </ion-card>
+    </ion-slides>
+  </ion-slide>
+  <ion-card>
+    <ion-card-header>
+      Collection
+    </ion-card-header>
+  </ion-card>
 </ion-content>

@@ -1,39 +1,72 @@
-.divider {
-    display: flex;
+ion-content{
+  --background: white;
+}
   
-    &:before,
-    &:after {
-      content: "";
-      flex: 1;
-    }
-  }
-  
-  .line {
-    align-items: center;
-    margin: 1em -1em;
-    color: #FFE8D4;
-  
-    &:before,
-    &:after {
-      height: 1px;
-      margin: 0 1em;
-    }
-  }
-  
-  .one-line {
-    &:before,
-    &:after {
-       background: #FFE8D4
-    }
-  }
-  
-  .already {
-    display: block;
-    text-align: center;
-    padding-bottom: 10px;
-  }
+.name{
+  font-size: 36px;
+  font-family: 'jost';
+  height: 40px;
+  padding-bottom: 0;
+  padding-top: 0;
+}
 
-  ion-content{
-    --background: white;
-   }
-   
+.date{
+  font-family: 'jost';
+  font-size: 16px
+}
+
+.image{
+  height: 75px;
+  width: stretch;
+}
+
+.picture{
+  height: 400px;
+  width: stretch;
+  text-align: center;
+  --background: white;
+  color: black;
+  border-radius: 5%;
+}
+
+hr{
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid #FFE8D4;
+}
+
+.card{
+  --background: #FFE8D4;
+  color: black;
+  height: 500px;
+  width: 300px;
+  border-radius: 7%;
+}
+
+.icon{
+  border-radius: 50%;
+  padding-left: 7px;
+  padding-bottom: 7px;
+  padding-right: 7px;
+  padding-top: 7px;
+  background: #F68080;
+  color: white;
+  height: 35px;
+  width: 8%;
+  text-align: center;
+  margin-left: 46%;
+}
+
+ion-slide{
+  height: 550px;
+}
+
+.drop{
+  font-size: 25px;
+  padding-top: 12%;
+  padding-left: 2%;
+}
