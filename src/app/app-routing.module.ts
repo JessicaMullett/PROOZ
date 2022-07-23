@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'gift-selector',
     loadChildren: () => import('./gift-selector/gift-selector.module').then( m => m.GiftSelectorPageModule)
   },
+  {
+    path: 'more-info',
+    loadChildren: () => import('./more-info/more-info.module').then( m => m.MoreInfoPageModule)
+  },
 ];
 
 @NgModule({
