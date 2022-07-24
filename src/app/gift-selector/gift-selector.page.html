@@ -2,7 +2,7 @@
   <!-- TODO: Add fetch command for profile information -->
   <ion-row class="ion-align-items-center">
     <ion-col size="3">
-      <ion-icon style="color:#FFE8D4" class="image" name="add-circle-outline"></ion-icon>
+      <ion-icon style="color:#F68080" class="image" name="add-circle-outline"></ion-icon>
       <!-- TODO: Replace icon with img -->
     </ion-col>
     <ion-col size="6">
@@ -26,9 +26,10 @@
       </ion-card>
     </ion-slides>
   </ion-slide>
-  <ion-card>
-    <ion-card-header>
-      Collection
-    </ion-card-header>
-  </ion-card>
 </ion-content>
+<collection-drawer [options]="drawerOptions">
+  <div>
+    <hr class="collection"/>
+    <h2>Collection</h2>
+  </div> 
+</collection-drawer>

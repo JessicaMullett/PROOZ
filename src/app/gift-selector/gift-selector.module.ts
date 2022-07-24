@@ -1,3 +1,4 @@
+import { CollectionDrawerComponent } from './../collection-drawer/collection-drawer.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -13,8 +14,8 @@ import { GiftSelectorPage } from './gift-selector.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    GiftSelectorPageRoutingModule
+    GiftSelectorPageRoutingModule,
   ],
-  declarations: [GiftSelectorPage]
+  declarations: [GiftSelectorPage, CollectionDrawerComponent]
 })
 export class GiftSelectorPageModule {}
