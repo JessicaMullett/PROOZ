@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-more-info',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MoreInfoPage implements OnInit {
 
-  constructor() { }
+  constructor(
+    public router: Router
+  ) { }
 
   ngOnInit() {
   }
 
+  giftSelect(){
+    // TODO: Add database link to store user email and password
+    this.router.navigate(['/gift-selector']),
+    console.log('directing')
+  }
 }
