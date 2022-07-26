@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { NavController } from '@ionic/angular';
 
 @Component({
@@ -12,10 +13,11 @@ export class GiftSelectorPage implements OnInit {
   drawerOptions: any;
 
   constructor(
-    public navCtrl: NavController
+    public navCtrl: NavController,
+    public router: Router,
   ) {
       this.drawerOptions = {
-          handleHeight: 80,
+          handleHeight: 90,
           thresholdFromBottom: 200,
           thresholdFromTop: 200,
           bounceBack: true,
@@ -23,6 +25,11 @@ export class GiftSelectorPage implements OnInit {
     }
 
   ngOnInit() {
+  }
+
+  moreInfo(){
+    this.router.navigate(['/more-info']),
+    console.log('directing')
   }
 
 }

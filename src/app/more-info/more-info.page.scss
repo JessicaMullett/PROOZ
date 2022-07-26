@@ -1,3 +1,59 @@
 ion-content {
     --background: white url('/assets/icon/moreinfobackground.png') no-repeat center/cover fixed;
+    --color: black;
+    font-family: 'jost';
   }
+
+.back-button{
+  color: #F68080;
+  font-size: 50px;
+  padding-top: 20%;
+  font-weight: bolder;
+}
+
+ion-card{
+  --background: #FFE8D4;
+  color: black;
+  height: 500px;
+  width: 300px;
+  border-radius: 7%;
+  text-align: center
+}
+
+h2{
+  font-size: 30px;
+  color: white;
+  font-weight: bolder;
+}
+
+.center{
+  width: stretch;
+  text-align: center;
+  font-weight: bolder;
+}
+
+ion-button{
+  color: white;
+  font-size: 25px;
+  width: stretch;
+  margin-left: 10%;
+  margin-right: 10%;
+  --border-radius: 40px;
+}
+
+.plus{
+  color: white;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.retailer{
+  --background: #F68080;
+  font-weight: bolder;
+}
+
+.collection{
+  --background: #FFE8D4;
+  text-align: left;
+  font-weight: bolder;
+}

@@ -17,7 +17,7 @@
   <ion-icon class="icon" name="trash-bin-outline"></ion-icon>
   <ion-slide>
     <ion-slides>
-      <ion-card class="card">
+      <ion-card (click)="moreInfo()" class="card">
         <ion-card-content>
           <ion-card class="picture">Image here</ion-card>
           <h4>Name of product</h4>
@@ -28,8 +28,6 @@
   </ion-slide>
 </ion-content>
 <collection-drawer [options]="drawerOptions">
-  <div>
-    <hr class="collection"/>
-    <h2>Collection</h2>
-  </div> 
+  <hr class="collection"/>
+  <h2>Collection</h2>
 </collection-drawer>

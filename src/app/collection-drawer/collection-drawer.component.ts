@@ -9,7 +9,7 @@ import { DomController, Platform } from '@ionic/angular';
 export class CollectionDrawerComponent implements OnInit {
 
   @Input('options') options: any;
-  handleHeight: number = 80;
+  handleHeight: number = 90;
   bounceBack: boolean = true;
   thresholdTop: number = 150;
   thresholdBottom: number = 200;
@@ -37,7 +37,6 @@ export class CollectionDrawerComponent implements OnInit {
     }
 
     this.renderer.setStyle(this.element.nativeElement, 'top', this.platform.height() - this.handleHeight + 'px');
-    this.renderer.setStyle(this.element.nativeElement, 'padding-top', this.handleHeight + 'px');
     let hammer = new window['Hammer'](this.element.nativeElement);
     hammer.get('pan').set({ direction: window['Hammer'].DIRECTION_ALL });
     hammer.on('pan', (ev) => {
